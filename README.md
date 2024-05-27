@@ -10,9 +10,9 @@ docker run -t --rm -p 8501:8501 \
 ```
 
 ```console
-docker build -t tensorflow_serving_coin_model .
+docker build -t tensorflow_serving_concat_coin_model .
 
 ```
 ```console
-docker run -p 8501:8501 --name tf_serving_coin_model -t tensorflow_serving_coin_model
+docker run -p 4501:4501 --name tf_serving_concat_coin_model -t tensorflow_serving_concat_coin_model --rest_api_port=4501
 ```
